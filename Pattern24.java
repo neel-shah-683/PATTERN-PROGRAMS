@@ -16,16 +16,8 @@ public class Pattern24 {
             {
                 if(j<=i)
                 {
-                    if(j%2==0)
-                    {
-                        k=0;
-                        System.out.print(k);                    
-                        k++;
-                    }
-                    else
-                    {
-                        System.out.print(k);                    
-                    }
+                    System.out.print(k);
+                    k=1-k;
                 }
                 else 
                 {
