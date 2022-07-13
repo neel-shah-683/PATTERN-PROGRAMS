@@ -9,13 +9,17 @@
  */
 public class Pattern37 {
     public static void main(String[] args) {
-
-        int k=0,s=5;
+        
+        int k=0,s=5,h=0;
         for(int i=1;i<=7;i++)
         {
-            int h=5;
+            int l=4;
             if(i<=4)
             {
+                if(i >= 2)
+                {
+                  h++; 
+                }
                 k++;
                 s--;
             }
@@ -23,6 +27,11 @@ public class Pattern37 {
             {
                 k--;
                 s++;
+                if(i<7)
+                {
+                    h--;
+                }
+               
             }
             for(int j=1;j<=7;j++)
             {
@@ -32,56 +41,22 @@ public class Pattern37 {
                     n=1;            
                     System.out.print(s);                    
                 }
-                if(j<=i-1 || j>=9-i)
+                if(j<=h || j>=8-h)
                 {
                     n=1;
-                    if(i>=2 && i<=4)
+                    if(i>=2 && i<=6)
                     {
-                        if(j < 5)
+                        if(j<=4)
                         {
-                            h--;
-                            System.out.print(h);                            
+                            System.out.print(l);      
+                            l--;              
                         }
-                        else 
-                        {
-                            System.out.print(h);                            
-                            h++;
+                        else{
+                            l++;
+                            System.out.print(l);                    
                         }
                     }
-                }
-                if(j<=2 || j>=6)
-                {
-                    n=1;
-                    if(i==5)
-                    {
-                        if(j < 5)
-                        {
-                            h--;
-                            System.out.print(h);                            
-                        }
-                        else 
-                        {
-                            System.out.print(h);                            
-                            h++;
-                        }                          
-                    }
-                }
-                if(j<=1 || j>=7)
-                {
-                    n=1;
-                    if(i==6)
-                    {
-                        if(j < 5)
-                        {
-                            h--;
-                            System.out.print(h);                            
-                        }
-                        else 
-                        {
-                            System.out.print(h);                            
-                            h++;
-                        }
-                    }
+                    
                 }
                 if(n==0)
                 {
