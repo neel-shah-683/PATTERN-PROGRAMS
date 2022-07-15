@@ -24,7 +24,7 @@
 public class Pattern26 {
  public static void main(String[] args) {
     
-    int m=0,k=0,s=1;
+    int m=0,k=0;
     for(int i=1;i<=21;i++)
     {
         if(i<=11)
