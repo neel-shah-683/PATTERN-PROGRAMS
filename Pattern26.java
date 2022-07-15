@@ -23,7 +23,8 @@
  */
 public class Pattern26 {
  public static void main(String[] args) {
-    int m=0,k=0;
+    
+    int m=0,k=0,s=1;
     for(int i=1;i<=21;i++)
     {
         if(i<=11)
@@ -39,17 +40,15 @@ public class Pattern26 {
         {
             if(j>=12-m && j<=10+m)
             {
+                System.out.print(k%10);
                 if(j<11)
                 {
-                    System.out.print(k%10);
                     k++;
                 }
-                else 
+                else
                 {
-                    System.out.print(k%10);
                     k--;
                 }
-                
             }
             else 
             {
